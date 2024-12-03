@@ -25,7 +25,7 @@ for line in lines:
                 tokens = capture.split(",")
                 if (len(tokens) == 2 and re.match(r"^\d{1,3}$", tokens[0]) and re.match(r"^\d{1,3}$", tokens[1])):
                     total += int(tokens[0]) * int(tokens[1])
-                i += 4
+            i += 4
         else:
             i += 1
 
@@ -52,7 +52,7 @@ for line in lines:
                 tokens = capture.split(",")
                 if (len(tokens) == 2 and re.match(r"^\d{1,3}$", tokens[0]) and re.match(r"^\d{1,3}$", tokens[1])):
                     total2 += int(tokens[0]) * int(tokens[1])
-                i += 4
+            i += 4
         elif not do and line[i:].startswith("do()"):
             do = True
             i += 4
